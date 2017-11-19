@@ -1,0 +1,12 @@
+language: python
+python:
+ - "2.7"
+addons:
+  apt:
+    packages:
+      - oracle-java8-set-default  # install Java8 as required by vnu.jar
+
+install:
+ - pip install html5validator
+
+script: html5validator --root src/ --show-warnings
