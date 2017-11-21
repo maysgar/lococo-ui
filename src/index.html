@@ -3,9 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Lococo - Homepage</title>
@@ -14,8 +15,8 @@
 <body>
 	<nav>
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">LOCOCO</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<a href="#" class="brand-logo left">LOCOCO</a>
+			<ul id="nav-mobile" class="right">
 				<li><button class="btn btn-link"><i class="fa fa-search" aria-hidden="true"></i></button></li>
 				<li><button class="btn btn-secondary">LOG IN</button></li>
 				<li><button class="btn btn-primary">SIGN UP</button></li>
@@ -23,55 +24,66 @@
 		</div>
 	</nav>
 	<main>
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
-				<h3>IN A NUTSHELL: BLACK HOLES EXPLAINED</h3>
-				<p>Featured video of the day</p>
-				<p class="duration-info">Duration: 40m 52s</p>
-				<p>
-					<button class="btn btn-primary">WATCH VIDEO</button>
-					<button class="btn btn-secondary">VIEW INFO</button>
-					<button class="btn btn-link"><i class="fa fa-plus" aria-hidden="true"></i> ADD TO QUEUE</button>
-				</p>
+		<div class="container-fluid bg-dark">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe width="100%" class="embed-responsive-item" src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen></iframe>
 			</div>
 		</div>
-		<div class="container">
-			<h3>Lococo, the same way as others, but just better</h3>
-		</div>
 		<div class="container-fluid">
-			<h2>Express yourself freely</h2>
-			<h4>Our content filters are the lowest of the market</h4>
-			<h4>Store videos in the highest quality without loss or latency thanks to our advanced compression algorithm</h4>
+			<p class="display-4">
+				Black Holes Explained - From Birth to Death
+			</p>
+			<ul>
+				<li class="left"><button type="button" class="btn btn-secondary">SAVE VIDEO</button></li>
+				<li class="left"><button type="button" class="btn btn-light">VIEW INFO</button></li>
+			</ul>
+			<div class="bg-dark right">
+				<p class="text-white">Rate</p>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button></button>
+			<form class="form-inline">
+    		<input class="form-control white" type="text" placeholder="Search Video...">
+    	</form>
+		</nav>
+		<div class="container-fluid left white">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen></iframe>
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen></iframe>
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen></iframe>
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen></iframe>
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen></iframe>
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen></iframe>
 		</div>
 	</main>
-	<footer>
+	<footer class="footer bg-dark text-light">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
 					<h3>Get to Know Us</h3>
 					<ul>
-						<li><a href="#">Carrers</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">About Weissman Score</a></li>
-						<li><a href="#">PiedPipper compression</a></li>
+						<li><a class="text-light" href="#">Carrers</a></li>
+						<li><a class="text-light" href="#">About Us</a></li>
+						<li><a class="text-light" href="#">About Weissman Score</a></li>
+						<li><a class="text-light" href="#">PiedPipper compression</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<h3>Be On Lococo</h3>
 					<ul>
-						<li><a href="#">Make Money with Us</a></li>
-						<li><a href="#">Upload your videos</a></li>
-						<li><a href="#">Publicity</a></li>
+						<li><a class="text-light" href="#">Make Money with Us</a></li>
+						<li><a class="text-light" href="#">Upload your videos</a></li>
+						<li><a class="text-light" href="#">Publicity</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<h3>Account Types</h3>
 					<ul>
-						<li><a href="#">Free account</a></li>
-						<li><a href="#">Premium account</a></li>
-						<li><a href="#">Gift Cards</a></li>
-						<li><a href="#">Payment Methods</a></li>
-						<li><a href="#">Help</a></li>
+						<li><a class="text-light" href="#">Free account</a></li>
+						<li><a class="text-light" href="#">Premium account</a></li>
+						<li><a class="text-light" href="#">Gift Cards</a></li>
+						<li><a class="text-light" href="#">Payment Methods</a></li>
+						<li><a class="text-light" href="#">Help</a></li>
 					</ul>
 				</div>
 			</div>
