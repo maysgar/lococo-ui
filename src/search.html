@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+		<link href='./style/images' rel='stylesheet'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	<title>Lococo - Search Page</title>
+</head>
+
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">LOCOCO</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><button class="btn btn-link"><i class="fa fa-search" aria-hidden="true"></i></button></li>
+				<li><button class="btn btn-secondary">LOG IN</button></li>
+				<li><button class="btn btn-primary">SIGN UP</button></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+					<h3>IN A NUTSHELL: BLACK HOLES EXPLAINED</h3>
+					<p>Featured video of the day</p>
+					<p class="duration-info">Duration: 40m 52s</p>
+					<p>
+						<button class="btn btn-primary">WATCH VIDEO</button>
+						<button class="btn btn-secondary">VIEW INFO</button>
+						<button class="btn btn-link"><i class="fa fa-plus" aria-hidden="true"></i> ADD TO QUEUE</button>
+					</p>
+			</div>
+		</div>
+		<div class="container">
+			<!-- video-list -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="tab" href="#home">Trending</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#menu1">Top Liked</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="tab" href="#menu2">Editor's choice</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#menu3">Genre</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#submenu1">Sports</a>
+						<a class="dropdown-item" href="#submenu2">Music</a>
+						<a class="dropdown-item" href="#submenu3">Gaming</a></div>
+				</li>
+			</ul>
+
+
+			<div class="tab-content">
+				<div id="home" class="container tab-pane active"><br>
+					<h3>HOME</h3>
+				</div>
+				<div id="menu1" class="container tab-pane fade"><br>
+					<h3>Menu 1</h3>
+				</div>
+				<div id="menu2" class="container tab-pane fade"><br>
+					<h3>Menu 2</h3>
+				</div>
+				<div id="submenu1" class="container tab-pane fade"><br>
+					<h3>Submenu 1</h3>
+				</div>
+				<div id="submenu2" class="container tab-pane fade"><br>
+					<h3>Submenu 2</h3>
+				</div>
+				<div id="submenu3" class="container tab-pane fade"><br>
+					<h3>Submenu 3</h3>
+				</div>
+			</div>
+
+		</div>
+	</main>
+	<footer class="footer bg-dark text-light fixed-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Get to Know Us</h3>
+					<ul>
+						<li><a class="text-light" href="#">Carrers</a></li>
+						<li><a class="text-light" href="#">About Us</a></li>
+						<li><a class="text-light" href="#">About Weissman Score</a></li>
+						<li><a class="text-light" href="#">PiedPipper compression</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>Be On Lococo</h3>
+					<ul>
+						<li><a class="text-light" href="#">Make Money with Us</a></li>
+						<li><a class="text-light" href="#">Upload your videos</a></li>
+						<li><a class="text-light" href="#">Publicity</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>Account Types</h3>
+					<ul>
+						<li><a class="text-light" href="#">Free account</a></li>
+						<li><a class="text-light" href="#">Premium account</a></li>
+						<li><a class="text-light" href="#">Gift Cards</a></li>
+						<li><a class="text-light" href="#">Payment Methods</a></li>
+						<li><a class="text-light" href="#">Help</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</html>
