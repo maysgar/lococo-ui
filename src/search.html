@@ -4,118 +4,222 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style/style.css">
-		<link href='./style/images' rel='stylesheet'>
+	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-	<script src="script.js"></script>
-	<title>Lococo - Search Page</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+
+	<title>Lococo - Homepage</title>
 </head>
 
 <body>
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">LOCOCO</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><button class="btn btn-link"><i class="fa fa-search" aria-hidden="true"></i></button></li>
-				<li><button class="btn btn-secondary">LOG IN</button></li>
-				<li><button class="btn btn-primary">SIGN UP</button></li>
-			</ul>
-		</div>
-	</nav>
+	<header>
+		<nav class="transparent absolute-top">
+			<div class="nav-wrapper white-text">
+				<a href="#" class="brand-logo">Lococo</a>
+				<a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-desktop" class="right hide-on-med-and-down">
+					<li><a class="btn-large waves-effect waves-light transparent z-depth-0"><i class="material-icons">search</i></a></li>
+					<li><a class="btn-large waves-effect waves-light transparent z-depth-0">LOG IN</a></li>
+					<li><a class="btn-large waves-effect waves-light grey darken-1 z-depth-0">SIGN UP</a></li>
+				</ul>
+				<ul id="nav-mobile" class="sidenav">
+					<li><a><i class="material-icons">search</i></a></li>
+					<li><a>LOG IN</a></li>
+					<li><a>SIGN UP</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 	<main>
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
-					<h3>IN A NUTSHELL: BLACK HOLES EXPLAINED</h3>
-					<p>Featured video of the day</p>
-					<p class="duration-info">Duration: 40m 52s</p>
-					<p>
-						<button class="btn btn-primary">WATCH VIDEO</button>
-						<button class="btn btn-secondary">VIEW INFO</button>
-						<button class="btn btn-link"><i class="fa fa-plus" aria-hidden="true"></i> ADD TO QUEUE</button>
-					</p>
+		<section id="featured-video" class="bg-responsive section">
+			<div class="container position-relative full-height">
+				<div class="row">
+					<div class="col s12 m9 absolute-bottom absolute-centered white-text">
+						<div class="featured-video-info">
+							<h3>IN A NUTSHELL: BLACK HOLES EXPLAINED</h3>
+							<p class="inline-b grey-text mr5">Featured video of the day</p>
+							<p class="inline-b grey-text">Duration: 40m 52s</p>
+						</div>
+						<p>
+							<button class="btn-large waves-effect waves-light grey darken-1">WATCH VIDEO</button>
+							<button class="btn-large waves-effect waves-light border-secondary transparent">VIEW INFO</button>
+							<button class="btn-flat white-text"><i class="material-icons left">add</i>ADD TO QUEUE</button>
+						</p>
+					</div>
+					<div class="col s12 m3 rating-module border-secondary white-text absolute-bottom absolute-right">
+						<div class="inline-b">
+							<p class="centered">Rating <span class="grey-text darken-1">based on 3,546 reviews</span></p>
+						</div>
+						<div class="stars">
+							<ul class="inline-b">
+								<li><i class="material-icons">star</i></li>
+								<li><i class="material-icons">star</i></li>
+								<li><i class="material-icons">star</i></li>
+								<li><i class="material-icons">star_half</i></li>
+								<li><i class="material-icons">star_outline</i></li>
+								<li><span class="rating">3.4</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
+		<!-- video-list -->
+
+
 		<div class="container">
-			<!-- video-list -->
-			<ul class="nav nav-tabs" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link active" data-toggle="tab" href="#home">Trending</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" data-toggle="tab" href="#menu1">Top Liked</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" data-toggle="tab" href="#menu2">Editor's choice</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#menu3">Genre</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#submenu1">Sports</a>
-						<a class="dropdown-item" href="#submenu2">Music</a>
-						<a class="dropdown-item" href="#submenu3">Gaming</a></div>
-				</li>
-			</ul>
 
-
-			<div class="tab-content">
-				<div id="home" class="container tab-pane active"><br>
-					<h3>HOME</h3>
+			<div class="row">
+				<div class="col s12">
+					<ul class="tabs">
+						<li class="tab col s2"><a href="#test1">Trending</a></li>
+						<li class="tab col s2"><a href="#test2">Top Liked</a></li>
+						<li class="tab col s2"><a href="#test3">Editor's choice</a></li>
+							<ul class="tab col s2" id="dropdown2" class="dropdown-content">
+								<a href="#test4" class="btn dropdown-button" data-activates="dropdown1">Genre<i class="material-icons right">arrow_drop_down</i></a>
+								<li><a href="#!">Sports</a></li>
+								<li><a href="#!">Music</a></li>
+								<li><a href="#!">Gaming</a></li>
+							</ul>
+					</ul>
 				</div>
-				<div id="menu1" class="container tab-pane fade"><br>
-					<h3>Menu 1</h3>
-				</div>
-				<div id="menu2" class="container tab-pane fade"><br>
-					<h3>Menu 2</h3>
-				</div>
-				<div id="submenu1" class="container tab-pane fade"><br>
-					<h3>Submenu 1</h3>
-				</div>
-				<div id="submenu2" class="container tab-pane fade"><br>
-					<h3>Submenu 2</h3>
-				</div>
-				<div id="submenu3" class="container tab-pane fade"><br>
-					<h3>Submenu 3</h3>
-				</div>
+				<div  class="col s12">Test 1</div>
+				<div id="test2" class="col s12">Test 2</div>
+				<div id="test3" class="col s12">Test 3</div>
+				<div id="test4" class="col s12">Test 4</div>
 			</div>
+
+
+			<div id="test1" class="col s12 m8 offset-m2 l6 offset-l3">
+        <div>
+          <div class="row valign-wrapper">
+            <div class="col s4">
+              <img src="images/blackhole.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s10">
+              <span>
+                <h5  class="black-text"><b>Lorem ipsum dolor sit amet, consectetur</b></h5>
+								<p class="grey-text text-darken-2">Channel &nbsp;&nbsp; 657k visualizations | 2 Days ago</p><br>
+								<p class="grey-text text-darken-2">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+								laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<div id="test1" class="col s12 m8 offset-m2 l6 offset-l3">
+        <div>
+          <div class="row valign-wrapper">
+            <div class="col s4">
+              <img src="images/blackhole.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s10">
+              <span>
+                <h5  class="black-text"><b>Lorem ipsum dolor sit amet, consectetur</b></h5>
+								<p class="grey-text text-darken-2">Channel &nbsp;&nbsp; 657k visualizations | 2 Days ago</p><br>
+								<p class="grey-text text-darken-2">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+								laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<div id="test1" class="col s12 m8 offset-m2 l6 offset-l3">
+        <div>
+          <div class="row valign-wrapper">
+            <div class="col s4">
+              <img src="images/blackhole.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s10">
+              <span>
+                <h5  class="black-text"><b>Lorem ipsum dolor sit amet, consectetur</b></h5>
+								<p class="grey-text text-darken-2">Channel &nbsp;&nbsp; 657k visualizations | 2 Days ago</p><br>
+								<p class="grey-text text-darken-2">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+								laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<div id="test1" class="col s12 m8 offset-m2 l6 offset-l3">
+        <div>
+          <div class="row valign-wrapper">
+            <div class="col s4">
+              <img src="images/blackhole.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s10">
+              <span>
+                <h5  class="black-text"><b>Lorem ipsum dolor sit amet, consectetur</b></h5>
+								<p class="grey-text text-darken-2">Channel &nbsp;&nbsp; 657k visualizations | 2 Days ago</p><br>
+								<p class="grey-text text-darken-2">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+								laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<div id="test1" class="col s12 m8 offset-m2 l6 offset-l3">
+        <div>
+          <div class="row valign-wrapper">
+            <div class="col s4">
+              <img src="images/blackhole.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s10">
+              <span>
+                <h5  class="black-text"><b>Lorem ipsum dolor sit amet, consectetur</b></h5>
+								<p class="grey-text text-darken-2">Channel &nbsp;&nbsp; 657k visualizations | 2 Days ago</p><br>
+								<p class="grey-text text-darken-2">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+								laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 		</div>
 	</main>
-	<footer class="footer bg-dark text-light fixed-bottom">
+	<footer class="page-footer grey darken-3">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<h3>Get to Know Us</h3>
+				<div class="col s12 m4">
+					<h5>Get to Know Us</h5>
 					<ul>
-						<li><a class="text-light" href="#">Carrers</a></li>
-						<li><a class="text-light" href="#">About Us</a></li>
-						<li><a class="text-light" href="#">About Weissman Score</a></li>
-						<li><a class="text-light" href="#">PiedPipper compression</a></li>
+						<li><a href="#">Carrers</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">About Weissman Score</a></li>
+						<li><a href="#">PiedPipper compression</a></li>
 					</ul>
 				</div>
-				<div class="col-md-4">
-					<h3>Be On Lococo</h3>
+				<div class="col s12 m4">
+					<h5>Be On Lococo</h5>
 					<ul>
-						<li><a class="text-light" href="#">Make Money with Us</a></li>
-						<li><a class="text-light" href="#">Upload your videos</a></li>
-						<li><a class="text-light" href="#">Publicity</a></li>
+						<li><a href="#">Make Money with Us</a></li>
+						<li><a href="#">Upload your videos</a></li>
+						<li><a href="#">Publicity</a></li>
 					</ul>
 				</div>
-				<div class="col-md-4">
-					<h3>Account Types</h3>
+				<div class="col s12 m4">
+					<h5>Account Types</h5>
 					<ul>
-						<li><a class="text-light" href="#">Free account</a></li>
-						<li><a class="text-light" href="#">Premium account</a></li>
-						<li><a class="text-light" href="#">Gift Cards</a></li>
-						<li><a class="text-light" href="#">Payment Methods</a></li>
-						<li><a class="text-light" href="#">Help</a></li>
+						<li><a href="#">Free account</a></li>
+						<li><a href="#">Premium account</a></li>
+						<li><a href="#">Gift Cards</a></li>
+						<li><a href="#">Payment Methods</a></li>
+						<li><a href="#">Help</a></li>
 					</ul>
 				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2017 Lococo
 			</div>
 		</div>
 	</footer>
