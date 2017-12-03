@@ -24,6 +24,15 @@ footer a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.chanLink:link{
+  color: #616161;
+  text-decoration: none;
+}
+
+.chanLink:hover {
+    font-weight: bold;
+}
+
 #featured-video {
   background-image: url("../images/previewfeatured.jpg");
   height: 700px;
