@@ -21,6 +21,20 @@ nav {
   padding: 0 5%;
 }
 
+.card-width{
+  width: 20%;
+}
+
+.icons-order{
+  float: right;
+}
+
+.bar{
+  background-color: grey;
+  z-index: 0;
+  padding: 0;
+}
+
 .floati{
   width: 30%;
   float: left;
@@ -29,6 +43,7 @@ nav {
 
 .rate{
   padding: 1em;
+  margin-right: 2%;
   float: right;
 }
 
