@@ -6,6 +6,16 @@ p {
   margin: 0 auto;
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 nav {
   z-index: 100;
   padding: 0 5%;
@@ -14,13 +24,19 @@ nav {
 .floati{
   width: 30%;
   float: left;
+  padding: 1em;
+}
+
+.rate{
+  padding: 1em;
+  float: right;
 }
 
 .title {
     color: black;
     display: inline-block;
     font-size: 2.1rem;
-    padding: 0;
+    padding: 0.5em;
     float: left;
     width: 100%;
 }
