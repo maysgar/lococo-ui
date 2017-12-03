@@ -24,6 +24,14 @@ footer a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.tab a.active {
+  color: #616161!important;
+}
+
+.tabs .indicator{
+  background-color: #616161!important;
+}
+
 .chanLink:link{
   color: #616161;
   text-decoration: none;
