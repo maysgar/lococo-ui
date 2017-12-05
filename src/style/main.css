@@ -152,3 +152,9 @@ footer a {
 .somemargin{
 	margin-top:  2%;
 }
+
+@media only screen and (max-width: 600px) {
+  .description{
+    display: none;
+  }
+}
