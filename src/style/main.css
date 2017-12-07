@@ -43,7 +43,6 @@ nav {
 
 .rate{
   padding: 1em;
-  margin-right: 2%;
   float: right;
 }
 
@@ -91,6 +90,10 @@ footer a {
 
 .mr5 {
   margin-right: 5%;
+}
+
+.pl0{
+  padding-left: 0;
 }
 
 .bg-responsive {
@@ -150,4 +153,8 @@ footer a {
     float: none;
     display: table-cell;
     vertical-align: bottom;
+}
+
+#search-box {
+    padding: .25%;  
 }
