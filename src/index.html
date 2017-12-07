@@ -3,19 +3,19 @@
 
 <head>
 	<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style/main.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
-		<!-- Compiled and minified JavaScript -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<script src="script/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="script/script.js"></script>
 
-		<title>Lococo - search result</title>
+	<title>Lococo - search result</title>
 </head>
 
 <body>
@@ -23,23 +23,29 @@
 		<div class="nav-wrapper">
 			<a href="#" class="brand-logo left">LOCOCO</a>
 			<ul id="nav-mobile" class="right">
-				<li><a class="btn-large waves-effect waves-light transparent z-depth-0">LOG IN</a></li>
-				<li><a class="btn-large waves-effect waves-light transparent darken-1 z-depth-0">SIGN UP</a></li>
+				<li>
+					<a class="btn-large waves-effect waves-light transparent z-depth-0">LOG IN</a>
+				</li>
+				<li>
+					<a class="btn-large waves-effect waves-light transparent darken-1 z-depth-0">SIGN UP</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
 	<main>
 		<div class="container-fluid">
 			<nav class="bar">
-		    <div class="nav-wrapper">
-		      <form>
-		        <div class="input-field">
-		          <input id="search" type="search" required>
-		          <label for="search"><i class="material-icons">search</i></label>
-		        </div>
-		      </form>
-		    </div>
-	  	</nav>
+				<div class="nav-wrapper">
+					<form>
+						<div class="input-field">
+							<input id="search" type="search" required>
+							<label for="search">
+								<i class="material-icons">search</i>
+							</label>
+						</div>
+					</form>
+				</div>
+			</nav>
 		</div>
 		<div class="container-fluid bg-dark">
 			<div class="video-container responsive-video">
@@ -56,97 +62,110 @@
 			</p>
 			<div class="rate col s12 m3 rating-module border-secondary white-text">
 				<div class="inline-b">
-					<p class="centered">Rating <span class="grey-text darken-1">based on 3,546 reviews</span></p>
+					<p class="centered">Rating
+						<span class="grey-text darken-1">based on 3,546 reviews</span>
+					</p>
 				</div>
 				<div class="stars">
 					<ul class="inline-b">
-						<li><i class="material-icons">star</i></li>
-						<li><i class="material-icons">star</i></li>
-						<li><i class="material-icons">star</i></li>
-						<li><i class="material-icons">star_half</i></li>
-						<li><i class="material-icons">star_outline</i></li>
-						<li><span class="rating">3.4</span></li>
+						<li>
+							<i class="material-icons">star</i>
+						</li>
+						<li>
+							<i class="material-icons">star</i>
+						</li>
+						<li>
+							<i class="material-icons">star</i>
+						</li>
+						<li>
+							<i class="material-icons">star_half</i>
+						</li>
+						<li>
+							<i class="material-icons">star_outline</i>
+						</li>
+						<li>
+							<span class="rating">3.4</span>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="container">
+			<div class="row col s12">
+				<ul class="tabs">
+					<li class="tab col s4">
+						<a href="#test1" class="grey-text">
+							<b>Related</b>
+						</a>
+					</li>
+					<li class="tab col s4">
+						<a href="#test2" class="grey-text">
+							<b>My Favorites</b>
+						</a>
+					</li>
+					<a href="#!" class="grey-text text-darken-1">
+						<i class="col s1 right material-icons">subject</i>
+					</a>
+					<a href="#!" class="grey-text text-darken-1">
+						<i class="col s1 right material-icons">border_all</i>
+					</a>
+				</ul>
+			</div>
 
-	    <div class="row col s12">
-	      <ul class="tabs">
-	        <li class="tab col s4">
-	          <a href="#test1" class="grey-text">
-	            <b>Related</b>
-	          </a>
-	        </li>
-	        <li class="tab col s4">
-	          <a href="#test2" class="grey-text">
-	            <b>My Favorites</b>
-	          </a>
-	        </li>
-		        <a href="#!" class="grey-text text-darken-1">
-		          <i class="col s1 right material-icons">subject</i>
-		        </a>
-		        <a href="#!" class="grey-text text-darken-1">
-		          <i class="col s1 right material-icons">border_all</i>
-		        </a>
-	      </ul>
-	    </div>
-
-				<div id="test1" class="col s12">
-		      <div class="row">
-		        <div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-		        <div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-		        <div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-		      </div>
-		      <div class="row">
-		        <div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-		        <div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-						<div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-		      </div>
-					<div class="row">
-		        <div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-		        <div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-						<div class="col s4">
-		          <a href="#videopage">
-		            <img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
-		          </a>
-		        </div>
-		      </div>
-		    </div>
-	    <div id="test2" class="col s12">No videos added yet</div>
+			<div id="test1" class="col s12">
+				<div class="row">
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col s4">
+						<a href="#videopage">
+							<img src="images/kermit.png" alt="blackhole" class="responsive-img z-depth-5">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="test2" class="col s12">No videos added yet</div>
 	</main>
 	<footer class="page-footer grey darken-3">
 		<div class="container">
@@ -154,28 +173,52 @@
 				<div class="col s12 m4">
 					<h5>Get to Know Us</h5>
 					<ul>
-						<li><a href="#">Carrers</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">About Weissman Score</a></li>
-						<li><a href="#">PiedPipper compression</a></li>
+						<li>
+							<a href="#">Carrers</a>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">About Weissman Score</a>
+						</li>
+						<li>
+							<a href="#">PiedPipper compression</a>
+						</li>
 					</ul>
 				</div>
 				<div class="col s12 m4">
 					<h5>Be On Lococo</h5>
 					<ul>
-						<li><a href="#">Make Money with Us</a></li>
-						<li><a href="#">Upload your videos</a></li>
-						<li><a href="#">Publicity</a></li>
+						<li>
+							<a href="#">Make Money with Us</a>
+						</li>
+						<li>
+							<a href="#">Upload your videos</a>
+						</li>
+						<li>
+							<a href="#">Publicity</a>
+						</li>
 					</ul>
 				</div>
 				<div class="col s12 m4">
 					<h5>Account Types</h5>
 					<ul>
-						<li><a href="#">Free account</a></li>
-						<li><a href="#">Premium account</a></li>
-						<li><a href="#">Gift Cards</a></li>
-						<li><a href="#">Payment Methods</a></li>
-						<li><a href="#">Help</a></li>
+						<li>
+							<a href="#">Free account</a>
+						</li>
+						<li>
+							<a href="#">Premium account</a>
+						</li>
+						<li>
+							<a href="#">Gift Cards</a>
+						</li>
+						<li>
+							<a href="#">Payment Methods</a>
+						</li>
+						<li>
+							<a href="#">Help</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -186,16 +229,18 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	 crossorigin="anonymous"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
+		$(document).ready(function () {
 			$('.sidenav').sidenav();
 		});
 	</script>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 </html>
