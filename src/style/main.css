@@ -52,20 +52,6 @@ footer a {
   margin-bottom: 1rem;
 }
 
-#slogan {
-  height: 200px;
-}
-
-#features {
-  background-image: url("../images/sea-home-page.jpg");
-  height: 500px;
-  padding: 2rem 0;
-}
-
-#features h2 {
-  margin-top: 0;
-}
-
 .material-icons {
   vertical-align: bottom;
 }
@@ -80,6 +66,10 @@ footer a {
 
 .mr5 {
   margin-right: 5%;
+}
+
+.modal .btn, .modal .btn-large {
+  margin-top: 1em;
 }
 
 .bg-responsive {
@@ -152,6 +142,10 @@ footer a {
 .somemargin{
 	margin-top:  2%;
 }
+
+.full-width {
+   width: 100%;
+ }
 
 @media only screen and (max-width: 600px) {
   .description{

@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Compiled and minified JavaScript -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<script src="script/script.js"></script>
 
 	<title>Lococo - search result</title>
 </head>
@@ -33,10 +33,10 @@
 						</a>
 					</li>
 					<li>
-						<a class="btn-large waves-effect waves-light transparent z-depth-0">LOG IN</a>
+						<a class="btn-large waves-effect waves-light transparent z-depth-0 modal-trigger" href="#login-modal">LOG IN</a>
 					</li>
 					<li>
-						<a class="btn-large waves-effect waves-light grey darken-1 z-depth-0">SIGN UP</a>
+						<a class="btn-large waves-effect waves-light grey darken-1 z-depth-0 modal-trigger" href="#login-modal">SIGN UP</a>
 					</li>
 				</ul>
 				<ul id="nav-mobile" class="sidenav">
@@ -56,6 +56,43 @@
 		</nav>
 	</header>
 	<main>
+
+		<!-- Modal Structure -->
+		<div id="login-modal" class="modal">
+			<div class="modal-content">
+				<div class="row">
+					<div class="col s12 m6">
+						<h4>Login</h4>
+						<form onsubmit="submitLogin(); return false;">
+							<input id="login-email" type="email" name="email" placeholder="Email" required>
+							<input id="login-password" type="password" name="password" placeholder="Password" title="A combination of letters and numbers of 8 characters maximum" maxlength="8" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?!.*\s).*$" required>
+							<p>
+								<label>
+        					<input type="checkbox" />
+        					<span>Keep me signed in</span>
+      					</label>
+							</p>
+							<button class="btn red full-width" type="submit" name="submit">LOG IN</button>
+						</form>
+					</div>
+					<div class="col s12 m6">
+						<div class="center">
+							<p>If you don't already have an account, click the button below to create your account
+							</p>
+							<button class="black white-text btn full-width">CREATE ACCOUNT</button>
+							<p>OR</p>
+							<button class="blue darken-2 white-text btn full-width">SIGN IN WITH FACEBOOK&nbsp;<i class="fa fa-facebook-official" aria-hidden="true"></i></button>
+							<button class="blue white-text btn full-width">SIGN IN WITH TWITTER&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="modal-footer grey lighten-3 valign-wrapper">
+				<p class="center">So you don't have an account? <a class="modal-close" href="#">Continue as guest.</a></p>
+			</div>
+		</div>
+
 		<section id="featured-video" class="bg-responsive section">
 			<div class="container position-relative full-height">
 				<div class="row">
@@ -328,9 +365,10 @@
 		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+	<script src="script/script.js"></script>
+
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
- crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 </html>
