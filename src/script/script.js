@@ -17,7 +17,7 @@ $(document).ready(function(){
     var expires = "expires=" + d.toGMTString();
     document.cookie = cookieName + "=" + cookieValue + ";" + expires;
   }
-  
+
   /*
    * Retuns the value of the cookie with the name given.
    * W3Schools ©

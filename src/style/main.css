@@ -147,6 +147,14 @@ footer a {
    width: 100%;
  }
 
+ .tab-icons{
+   margin-bottom: 22%;
+ }
+
+ .tab-right-icons{
+   margin-top: 7%;
+ }
+
 @media only screen and (max-width: 600px) {
   .description{
     display: none;

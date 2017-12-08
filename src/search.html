@@ -20,25 +20,34 @@
 
 <body>
 	<header>
-		<nav class="transparent absolute-top">
-			<div class="nav-wrapper white-text">
-				<a href="#" class="brand-logo">Lococo</a>
-				<a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse">
-					<i class="material-icons">menu</i>
-				</a>
-				<ul id="nav-desktop" class="right hide-on-med-and-down">
-					<li>
-						<a class="btn-large waves-effect waves-light transparent z-depth-0">
-							<i class="material-icons">search</i>
-						</a>
-					</li>
-					<li>
-						<a class="btn-large waves-effect waves-light transparent z-depth-0 modal-trigger" href="#login-modal">LOG IN</a>
-					</li>
-					<li>
-						<a class="btn-large waves-effect waves-light grey darken-1 z-depth-0 modal-trigger" href="#login-modal">SIGN UP</a>
-					</li>
-				</ul>
+		<nav class="navbar black accent-2 nav-wrapper">
+			<div class="row">
+				<div class="col m2 left">
+					<a href="#" class="brand-logo">Lococo</a>
+					<a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse">
+						<i class="material-icons">menu</i>
+					</a>
+				</div>
+				<div class="col m6 hide-on-med-and-down">
+					<form class="search-input">
+						<div class="input-field">
+							<input id="search" type="search" />
+							<label for="search">
+								<i class="material-icons">search</i>
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="col m4">
+					<ul id="nav-desktop" class="right hide-on-med-and-down">
+						<li>
+							<a class="btn-large waves-effect waves-light transparent z-depth-0 modal-trigger" href="#login-modal">LOG IN</a>
+						</li>
+						<li>
+							<a class="btn-large waves-effect waves-light grey darken-1 z-depth-0 modal-trigger" href="#login-modal">SIGN UP</a>
+						</li>
+					</ul>
+				</div>
 				<ul id="nav-mobile" class="sidenav">
 					<li>
 						<a>
@@ -146,35 +155,23 @@
 
 		<div class="container">
 			<div class="row col s12">
-				<ul class="tabs">
+				<ul class="tabs hide-on-small-only">
 					<li class="tab col s2">
-						<!-- <a href="#test1" data-target="nav-mobile" class="grey-text">
-							<i class="material-icons">whatshot</i>
-						</a> -->
 						<a href="#test1" class="grey-text">
 							<b>Trending</b>
 						</a>
 					</li>
 					<li class="tab col s2">
-						<!-- <a href="#test2" data-target="nav-mobile" class="grey-text">
-							<i class="material-icons">thumb_up</i>
-						</a> -->
 						<a href="#test2" class="grey-text">
 							<b>Top Liked</b>
 						</a>
 					</li>
 					<li class="tab col s2">
-						<!-- <a href="#test3" data-target="nav-mobile" class="grey-text">
-							<i class="material-icons">add_circle</i>
-						</a> -->
 						<a href="#test3" class="grey-text">
 							<b>Top Picks</b>
 						</a>
 					</li>
 					<li class="tab col s2">
-						<!-- <a href="#test4" data-target="nav-mobile" class="grey-text">
-							<i class="material-icons">whatshot</i>
-						</a> -->
 						<a href="#test4" class="grey-text">
 							<b>Genre</b>
 						</a>
@@ -189,7 +186,38 @@
 					</div>
 				</ul>
 
+				<ul class="tabs hide-on-med-and-up">
+					<li class="tab col s2">
+						<a href="#test1" data-target="nav-mobile" class="grey-text">
+							<i class="material-icons tab-icons">whatshot</i>
+						</a>
+					</li>
+					<li class="tab col s2">
+						<a href="#test2" data-target="nav-mobile" class="grey-text">
+							<i class="material-icons tab-icons">thumb_up</i>
+						</a>
+					</li>
+					<li class="tab col s2">
+						<a href="#test3" data-target="nav-mobile" class="grey-text">
+							<i class="material-icons tab-icons">flag</i>
+						</a>
+					</li>
+					<li class="tab col s2">
+						<a href="#test4" data-target="nav-mobile" class="grey-text">
+							<i class="material-icons tab-icons">add_circle</i>
+						</a>
+					</li>
+					<div class="somemargin">
+						<a href="#!" class="grey-text text-darken-1">
+							<i class="right material-icons tab-right-icons">subject</i>
+						</a>
+						<a href="#!" class="grey-text text-darken-1">
+							<i class="right material-icons tab-right-icons">border_all</i>
+						</a>
+					</div>
+				</ul>
 			</div>
+
 			<div id="test1" class="col s12 p1-top">
 				<div class="row">
 					<div class="col m4">
@@ -297,9 +325,312 @@
 					</div>
 				</div>
 			</div>
-			<div id="test2" class="col s12">Test 2</div>
-			<div id="test3" class="col s12">Test 3</div>
-			<div id="test4" class="col s12">Tramadol con los iconos</div>
+			<div id="test2" class="col s12">
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/robotrights.jpg" alt="robotrights" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Duis aute irure dolor</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/robotrights.jpg" alt="robotrights" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Duis aute irure dolor</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/robotrights.jpg" alt="robotrights" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Duis aute irure dolor</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/robotrights.jpg" alt="robotrights" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Duis aute irure dolor</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/robotrights.jpg" alt="robotrights" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Duis aute irure dolor</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id="test3" class="col s12">
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/prisonearth.jpg" alt="prisonearth" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Quis autem vel eum iure reprehenderit qui</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/prisonearth.jpg" alt="prisonearth" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Quis autem vel eum iure reprehenderit qui</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/prisonearth.jpg" alt="prisonearth" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Quis autem vel eum iure reprehenderit qui</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/prisonearth.jpg" alt="prisonearth" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Quis autem vel eum iure reprehenderit qui</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/prisonearth.jpg" alt="prisonearth" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Quis autem vel eum iure reprehenderit qui</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id="test4" class="col s12">
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/overpopulation.jpg" alt="overpopulation" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Neque porro quisquam est, qui dolorem ipsum</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/overpopulation.jpg" alt="overpopulation" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Neque porro quisquam est, qui dolorem ipsum</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/overpopulation.jpg" alt="overpopulation" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Neque porro quisquam est, qui dolorem ipsum</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/overpopulation.jpg" alt="overpopulation" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Neque porro quisquam est, qui dolorem ipsum</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m4">
+						<a href="#videopage">
+							<img src="images/overpopulation.jpg" alt="overpopulation" class="responsive-img z-depth-5">
+						</a>
+					</div>
+					<div class="col m8">
+						<span>
+							<h5 class="m0-top">
+								<b>
+									<a class="black-text" href="#videopage">Neque porro quisquam est, qui dolorem ipsum</a>
+								</b>
+							</h5>
+							<p class="grey-text text-darken-2">
+								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
+							<br>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer class="page-footer grey darken-3">
