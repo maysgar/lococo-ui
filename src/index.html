@@ -19,7 +19,8 @@
 </head>
 
 <body>
-	<nav class="transparent absolute-top">
+	<main>
+		<nav class="">
 			<div class="nav-wrapper white-text">
 				<a href="#" class="brand-logo">Lococo</a>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse">
@@ -53,24 +54,9 @@
 				</ul>
 			</div>
 		</nav>
-	<main>
-		<div id="search-box">
-			<div class="bar">
-				<div class="nav-wrapper">
-					<form>
-						<div class="input-field">
-							<input id="search" type="search" required>
-							<label for="search">
-								<i class="material-icons">search</i>
-							</label>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
 		<div class="bg-dark">
 			<div class="video-container responsive-video">
-				<iframe width="100%" height="480" src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/e-P5IFTqB98" allowfullscreen="" width="100%" height="480"></iframe>
 			</div>
 		</div>
 		<div class="container">
@@ -117,7 +103,7 @@
 			<div class="row col s12">
 				<ul class="tabs">
 					<li class="tab col s4">
-						<a href="#test1" class="grey-text active">
+						<a href="#test1" class="grey-text active" style="">
 							<b>Related</b>
 						</a>
 					</li>
@@ -136,7 +122,7 @@
 					<li class="indicator" style="right: 598px; left: 0px;"></li>
 				</ul>
 			</div>
-			<div id="test1" class="col s12">
+			<div id="test1" class="col s12 active">
 				<div class="row">
 					<div class="col s4">
 						<a href="#videopage">
@@ -190,7 +176,7 @@
 				</div>
 
 			</div>
-			<div id="test2" class="col s12">No videos added yet</div>
+			<div id="test2" class="col s12" style="display: none;">No videos added yet</div>
 		</div>
 	</main>
 	<footer class="page-footer grey darken-3">
@@ -255,10 +241,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-	 crossorigin="anonymous"></script>
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('.sidenav').sidenav();
