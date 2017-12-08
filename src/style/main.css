@@ -150,11 +150,11 @@ footer a {
 }
 
 .bottom-column {
-    float: none;
-    display: table-cell;
-    vertical-align: bottom;
+  float: none;
+  display: table-cell;
+  vertical-align: bottom;
 }
 
 #search-box {
-    padding: .25%;  
+  padding: .25%;  
 }
