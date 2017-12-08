@@ -200,7 +200,8 @@ nav .input-field label {
   position:relative;
   float: left;
 }
-.title {
+
+.title-small {
   position: absolute;
   bottom: 10px;
   left: 20px;
