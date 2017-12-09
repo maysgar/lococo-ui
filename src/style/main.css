@@ -237,3 +237,33 @@ nav .input-field label {
 html body main div.container div.row ul.tabs a.grey-text i.right.material-icons {
   line-height: 48px;
 }
+
+.fa-star:before {
+  content: "\f005";
+}
+
+.rating-list li i.blanco {
+  color: white;
+}
+
+.rating-list li i.gray {
+  color: #bbb;
+}
+
+.list-inline>li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.rating-list li {
+  padding: 0px;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  transform: translate(0, 0);
+}
