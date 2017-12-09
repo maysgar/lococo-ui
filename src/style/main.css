@@ -68,7 +68,6 @@ footer a {
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
-  margin-top: 50px;
 }
 
 .nav{
@@ -226,4 +225,15 @@ nav .input-field label {
 
 .material-icons {
   vertical-align: bottom;
+}
+
+@media only screen and (max-width: 600px) {
+  div.row > div:nth-child(2) {
+    margin-top: 20px;
+  }
+
+}
+
+main div.container div.row ul.tabs a.col.right.grey-text{
+  line-height: 36px;
 }
