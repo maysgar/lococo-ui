@@ -1,7 +1,6 @@
-
-
 $(document).ready(function(){
     $('ul.tabs').tabs();
+    $('.sidenav').sidenav();
   });
 
   // $(document).ready(function(){
