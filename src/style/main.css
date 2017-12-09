@@ -152,3 +152,19 @@ footer a {
 .somemargin{
 	margin-top:  2%;
 }
+
+input[id="search"] {
+  height: 45px !important; 
+  margin-top: 10px !important;
+}
+
+.search-input {
+  background-color: #535353 ;
+  height: 45px !important; 
+  margin-top: 10px !important;
+}
+
+nav .input-field label {
+  top: -20px !important;
+  left: 0 !important;
+}
