@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Compiled and minified JavaScript -->
-	
+
 
 	<title>Lococo - search result</title>
 </head>
@@ -19,48 +19,48 @@
 <body>
 	<header>
 		<nav class="transparent absolute-top navbar black accent-2 nav-wrapper">
-				<div class="row">
-					<div class="col m2 left">
-						<a href="#" class="brand-logo">Lococo</a>
-						<a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse">
-							<i class="material-icons">menu</i>
-						</a>
-					</div>
-					<div class="col m6 hide-on-med-and-down">
-						<form class="search-input">
-							<div class="input-field">
-								<input id="search" type="search" />
-								<label for="search">
-									<i class="material-icons">search</i>
-								</label>
-							</div>
-						</form>
-					</div>
-					<div class="col m4">
-						<ul id="nav-desktop" class="right hide-on-med-and-down">
-							<li>
-								<a class="btn-large waves-effect waves-light transparent z-depth-0 modal-trigger" href="#login-modal">LOG IN</a>
-							</li>
-							<li>
-								<a class="btn-large waves-effect waves-light grey darken-1 z-depth-0 modal-trigger" href="#login-modal">SIGN UP</a>
-							</li>
-						</ul>
-					</div>
-					<ul id="nav-mobile" class="sidenav">
-						<li>
-							<a>
+			<div class="row">
+				<div class="col m2 left">
+					<a href="#" class="brand-logo">Lococo</a>
+					<a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse">
+						<i class="material-icons">menu</i>
+					</a>
+				</div>
+				<div class="col m6 hide-on-med-and-down">
+					<form class="search-input">
+						<div class="input-field">
+							<input id="search" type="search" />
+							<label for="search">
 								<i class="material-icons">search</i>
-							</a>
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="col m4">
+					<ul id="nav-desktop" class="right hide-on-med-and-down">
+						<li>
+							<a class="btn-large waves-effect waves-light transparent z-depth-0 modal-trigger" href="#login-modal">LOG IN</a>
 						</li>
 						<li>
-							<a>LOG IN</a>
-						</li>
-						<li>
-							<a>SIGN UP</a>
+							<a class="btn-large waves-effect waves-light grey darken-1 z-depth-0 modal-trigger" href="#login-modal">SIGN UP</a>
 						</li>
 					</ul>
 				</div>
-			</nav>
+				<ul id="nav-mobile" class="sidenav">
+					<li>
+						<a>
+							<i class="material-icons">search</i>
+						</a>
+					</li>
+					<li>
+						<a>LOG IN</a>
+					</li>
+					<li>
+						<a>SIGN UP</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	</header>
 	<main>
 
@@ -72,12 +72,13 @@
 						<h4>Login</h4>
 						<form onsubmit="submitLogin(); return false;">
 							<input id="login-email" type="email" name="email" placeholder="Email" required>
-							<input id="login-password" type="password" name="password" placeholder="Password" title="A combination of letters and numbers of 8 characters maximum" maxlength="8" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?!.*\s).*$" required>
+							<input id="login-password" type="password" name="password" placeholder="Password" title="A combination of letters and numbers of 8 characters maximum"
+							 maxlength="8" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?!.*\s).*$" required>
 							<p>
 								<label>
-        					<input type="checkbox" />
-        					<span>Keep me signed in</span>
-      					</label>
+									<input type="checkbox" />
+									<span>Keep me signed in</span>
+								</label>
 							</p>
 							<button class="btn red full-width" type="submit" name="submit">LOG IN</button>
 						</form>
@@ -88,15 +89,21 @@
 							</p>
 							<button class="black white-text btn full-width">CREATE ACCOUNT</button>
 							<p>OR</p>
-							<button class="blue darken-2 white-text btn full-width">SIGN IN WITH FACEBOOK&nbsp;<i class="fa fa-facebook-official" aria-hidden="true"></i></button>
-							<button class="blue white-text btn full-width">SIGN IN WITH TWITTER&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></button>
+							<button class="blue darken-2 white-text btn full-width">SIGN IN WITH FACEBOOK&nbsp;
+								<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							</button>
+							<button class="blue white-text btn full-width">SIGN IN WITH TWITTER&nbsp;
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</button>
 						</div>
 					</div>
 				</div>
 
 			</div>
 			<div class="modal-footer grey lighten-3 valign-wrapper">
-				<p class="center">So you don't have an account? <a class="modal-close" href="#">Continue as guest.</a></p>
+				<p class="center">So you don't have an account?
+					<a class="modal-close" href="#">Continue as guest.</a>
+				</p>
 			</div>
 		</div>
 
@@ -174,14 +181,12 @@
 							<b>Genre</b>
 						</a>
 					</li>
-					<div class="somemargin">
-						<a href="#!" class="grey-text text-darken-1">
-							<i class="right material-icons">subject</i>
-						</a>
-						<a href="#!" class="grey-text text-darken-1">
-							<i class="right material-icons">border_all</i>
-						</a>
-					</div>
+					<a href="#!" class="grey-text">
+						<i class="right material-icons">subject</i>
+					</a>
+					<a href="#!" class="grey-text">
+						<i class="right material-icons">border_all</i>
+					</a>
 				</ul>
 
 				<ul class="tabs hide-on-med-and-up">
@@ -340,7 +345,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+								quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+								deserunt mollitia animi, id est laborum et dolorum fuga.</p>
 						</span>
 					</div>
 				</div>
@@ -360,7 +367,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+								quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+								deserunt mollitia animi, id est laborum et dolorum fuga.</p>
 						</span>
 					</div>
 				</div>
@@ -380,7 +389,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+								quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+								deserunt mollitia animi, id est laborum et dolorum fuga.</p>
 						</span>
 					</div>
 				</div>
@@ -400,7 +411,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+								quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+								deserunt mollitia animi, id est laborum et dolorum fuga.</p>
 						</span>
 					</div>
 				</div>
@@ -420,7 +433,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 288k visualizations | 5 Days ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+							<p class="grey-text text-darken-2 description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+								quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
+								deserunt mollitia animi, id est laborum et dolorum fuga.</p>
 						</span>
 					</div>
 				</div>
@@ -442,7 +457,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+								cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+								repellendus.</p>
 						</span>
 					</div>
 				</div>
@@ -462,7 +479,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+								cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+								repellendus.</p>
 						</span>
 					</div>
 				</div>
@@ -482,7 +501,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+								cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+								repellendus.</p>
 						</span>
 					</div>
 				</div>
@@ -502,7 +523,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+								cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+								repellendus.</p>
 						</span>
 					</div>
 				</div>
@@ -522,7 +545,9 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 215k visualizations | 4 Weeks ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+							<p class="grey-text text-darken-2 description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+								cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+								repellendus.</p>
 						</span>
 					</div>
 				</div>
@@ -544,7 +569,8 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+								Duis leo. Sed fringilla mauris sit amet nibh.</p>
 						</span>
 					</div>
 				</div>
@@ -564,7 +590,8 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+								Duis leo. Sed fringilla mauris sit amet nibh.</p>
 						</span>
 					</div>
 				</div>
@@ -584,7 +611,8 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+								Duis leo. Sed fringilla mauris sit amet nibh.</p>
 						</span>
 					</div>
 				</div>
@@ -604,7 +632,8 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+								Duis leo. Sed fringilla mauris sit amet nibh.</p>
 						</span>
 					</div>
 				</div>
@@ -624,7 +653,8 @@
 							<p class="grey-text text-darken-2">
 								<a class="chanLink" href="#channelpage">Channel</a> &nbsp;&nbsp; 50k visualizations | 2 Months ago</p>
 							<br>
-							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+							<p class="grey-text text-darken-2 description">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+								Duis leo. Sed fringilla mauris sit amet nibh.</p>
 						</span>
 					</div>
 				</div>
@@ -694,14 +724,15 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
 	<script src="script/script.js"></script>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
  crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
- <script src="script/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+<script src="script/script.js"></script>
 
 </html>

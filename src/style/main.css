@@ -139,10 +139,6 @@ footer a {
   padding-top: .75rem;
 }
 
-.somemargin{
-	margin-top:  2%;
-}
-
 input[id="search"] {
   height: 45px !important; 
   margin-top: 10px !important;
@@ -174,4 +170,8 @@ nav .input-field label {
   .description{
     display: none;
   }
+}
+
+html body main div.container div.row.col.s12 ul.tabs.hide-on-small-only a.grey-text i.right.material-icons{
+  line-height: 48px;
 }
