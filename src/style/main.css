@@ -234,6 +234,6 @@ nav .input-field label {
 
 }
 
-main div.container div.row ul.tabs a.col.right.grey-text{
-  line-height: 36px;
+html body main div.container div.row ul.tabs a.grey-text i.right.material-icons {
+  line-height: 48px;
 }
