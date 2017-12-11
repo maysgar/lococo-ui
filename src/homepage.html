@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" style="height: 100%">
 
 <head>
+	<title>Lococo - Homepage</title>
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style/homepage.css">
@@ -10,12 +12,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<title>Lococo - Homepage</title>
 </head>
 
 <body>
 	<header>
-		<nav class="transparent absolute-top navbar black accent-2 nav-wrapper">
+		<nav class="transparent absolute-top navbar black accent-2 nav-wrapper z-depth-0">
 			<div class="row">
 				<div class="col m2 left">
 					<a href="#" class="brand-logo">Lococo</a>
@@ -43,21 +44,25 @@
 						</li>
 					</ul>
 				</div>
-				<ul id="nav-mobile" class="sidenav">
-					<li>
-						<a>
-							<i class="material-icons">search</i>
-						</a>
-					</li>
-					<li>
-						<a>LOG IN</a>
-					</li>
-					<li>
-						<a>SIGN UP</a>
-					</li>
+				<ul id='dropdown1' class='dropdown-content'>
+					<li><a onclick="logout()">Sign out</a></li>
+					<li class="divider"></li>
 				</ul>
 			</div>
 		</nav>
+		<ul id="nav-mobile" class="sidenav">
+			<li>
+				<a>
+					<i class="material-icons">search</i>
+				</a>
+			</li>
+			<li>
+				<a>LOG IN</a>
+			</li>
+			<li>
+				<a>SIGN UP</a>
+			</li>
+		</ul>
 	</header>
 	<main>
 		<!-- Modal Structure -->
@@ -68,8 +73,7 @@
 						<h4>Login</h4>
 						<form onsubmit="submitLogin(); return false;">
 							<input id="login-email" type="email" name="email" placeholder="Email" required>
-							<input id="login-password" type="password" name="password" placeholder="Password" title="A combination of letters and numbers of 8 characters maximum"
-							 maxlength="8" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?!.*\s).*$" required>
+							<input id="login-password" type="password" name="password" placeholder="Password" title="A combination of letters and numbers of 8 characters maximum" maxlength="8" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?!.*\s).*$" required>
 							<p>
 								<label>
 									<input type="checkbox" />
@@ -106,20 +110,41 @@
 		<section id="featured-video" class="bg-responsive section">
 			<div class="container position-relative full-height">
 				<div class="row">
-					<div class="col s12 m9 absolute-bottom absolute-centered white-text">
+					<div class="col s12 m12 absolute-bottom absolute-centered white-text">
 						<div class="featured-video-info">
 							<h3>IN A NUTSHELL: BLACK HOLES EXPLAINED</h3>
 							<p class="inline-b grey-text mr5">Featured video of the day</p>
-							<p class="inline-b grey-text">Duration: 40m 52s</p>
+							<p class="inline-b grey-text mr5">Duration: 40m 52s</p>
+							<div class="stars inline-b">
+								<ul class="inline-b">
+									<li>
+										<i class="material-icons">star</i>
+									</li>
+									<li>
+										<i class="material-icons">star</i>
+									</li>
+									<li>
+										<i class="material-icons">star</i>
+									</li>
+									<li>
+										<i class="material-icons">star_half</i>
+									</li>
+									<li>
+										<i class="material-icons">star_outline</i>
+									</li>
+									<!-- <li>
+										<span class="rating">3.4</span>
+									</li> -->
+								</ul>
+							</div>
+							<p>
+								<a href="videopage.html" class="btn-large waves-effect waves-light grey darken-1">WATCH VIDEO</a>
+								<a class="btn-large waves-effect waves-light border-secondary transparent">VIEW INFO</a>
+								<a class="btn-flat white-text">
+								<i class="material-icons left">add</i>ADD TO QUEUE</a>
+							</p>
 						</div>
-						<p>
-							<button class="btn-large waves-effect waves-light grey darken-1">WATCH VIDEO</button>
-							<button class="btn-large waves-effect waves-light border-secondary transparent">VIEW INFO</button>
-							<button class="btn-flat white-text">
-								<i class="material-icons left">add</i>ADD TO QUEUE</button>
-						</p>
-					</div>
-					<div class="col s12 m3 rating-module border-secondary white-text absolute-bottom absolute-right">
+						<!-- <div class="col s12 m3 rating-module border-secondary white-text absolute-bottom absolute-right">
 						<div class="inline-b">
 							<p class="centered">Rating
 								<span class="grey-text darken-1">based on 3,546 reviews</span>
@@ -146,7 +171,7 @@
 									<span class="rating">3.4</span>
 								</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -225,8 +250,7 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-	 crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
 	<script src="script/homepage.js"></script>
 
