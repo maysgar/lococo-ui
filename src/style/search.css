@@ -36,6 +36,10 @@ footer a {
   background-color: #616161!important;
 }
 
+.chanLink:visited{
+  color:#616161;
+}
+
 .chanLink:link{
   color: #616161;
   text-decoration: none;
