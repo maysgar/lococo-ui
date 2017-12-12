@@ -1,9 +1,12 @@
-$(document).ready(function() {
-  $('ul.tabs').tabs();
-  $('.sidenav').sidenav();
-  $('.modal').modal();
-  checkCookies();
-});
+$(document).ready(function(){
+    $('ul.tabs').tabs();
+    $('.sidenav').sidenav();
+    $('.modal').modal();
+    $(".desc-pop-button").click(function(){
+    $(".desc-pop").toggle();
+    checkCookies();
+    });
+  });
 
 /*
  * Sets a new cookie, with name, value and days given.
