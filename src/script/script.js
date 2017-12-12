@@ -3,9 +3,9 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.modal').modal();
     $(".desc-pop-button").click(function(){
-    $(".desc-pop").toggle();
-    checkCookies();
+      $(".desc-pop").toggle();
     });
+    checkCookies();
   });
 
 /*
