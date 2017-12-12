@@ -2,7 +2,6 @@ $(document).ready(function() {
   $('.sidenav').sidenav();
   $('.modal').modal();
   checkCookies();
-  $('.dropdown-trigger').dropdown();
 });
 
 /*
@@ -78,10 +77,13 @@ function loadCookiesData() {
   $('#nav-desktop > li').hide();
   $('#nav-mobile > li').hide();
 
-  $('#nav-desktop').append("<li><a class='btn transparent z-depth-0 dropdown-trigger' data-target='dropdown1'>" + getCookie('email') + '</a></li>');
-  $('#nav-mobile').append("<li><div class='user-view'><span class='name'>" + "KELOOKKK" + "</span><span class='email'>" + getCookie('email') + "</span></div></li>");
-  $('#nav-mobile').append("<li><a onclick='logout()' class='btn black'>Sign out</a></li>");
+  $('.dropdown-trigger').show();
+
+  $('#nav-desktop').append("<li><a class='logged btn transparent z-depth-0 dropdown-trigger' data-target='dropdown1'>" + getCookie('email') + '</a></li>');
+  $('#nav-mobile').append("<li><div class='logged user-view'><span class='name'>" + "Welcome" + "</span><span class='email'>" + getCookie('email') + "</span></div></li>");
+  $('#nav-mobile').append("<li><a onclick='logout()' class='logged btn black'>Sign out</a></li>");
   $('.modal').modal('close');
+  $('.dropdown-trigger').dropdown();
 }
 
 function checkCookies() {
@@ -91,7 +93,10 @@ function checkCookies() {
 }
 
 function logout() {
-  deleteAllCookies();
   $('#nav-desktop > li').show();
-  $('.dropdown-trigger').hide();
+  $('#nav-mobile > li').show();
+
+  $('.logged').remove();
+
+  deleteAllCookies();
 }
