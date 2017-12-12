@@ -1,12 +1,13 @@
-$(document).ready(function(){
-    $('ul.tabs').tabs();
-    $('.sidenav').sidenav();
-    $('.modal').modal();
-    $(".desc-pop-button").click(function(){
-      $(".desc-pop").toggle();
-    });
-    checkCookies();
+$(document).ready(function() {
+  $('ul.tabs').tabs();
+  $('.sidenav').sidenav();
+  $('.modal').modal();
+  $(".desc-pop-button").click(function() {
+    $(".desc-pop").toggle();
   });
+  checkCookies();
+});
+
 
 /*
  * Sets a new cookie, with name, value and days given.
@@ -14,7 +15,7 @@ $(document).ready(function(){
  */
 function setCookie(cookieName, cookieValue, expDays) {
   var d = new Date();
-  d.setTime(d.getTime() + (expDays*24*60*60*1000));
+  d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
   var expires = "expires=" + d.toGMTString();
   document.cookie = cookieName + "=" + cookieValue + ";" + expires;
 }
@@ -44,13 +45,13 @@ function getCookie(cookieName) {
  * W3Schools ©
  */
 function deleteAllCookies() {
-    var cookies = document.cookie.split(";");
-    for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i];
-        var eqPos = cookie.indexOf("=");
-        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    }
+  var cookies = document.cookie.split(";");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i];
+    var eqPos = cookie.indexOf("=");
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  }
 }
 
 
@@ -91,8 +92,13 @@ function loadCookiesData() {
 }
 
 function checkCookies() {
-  if(getCookie('email') != "" && getCookie('password') != "") {
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+
+  if (getCookie('email') != "" && getCookie('password') != "") {
     loadCookiesData();
+  } else if (page == "search.html") {
+    $('.modal').modal('open');
   }
 }
 
