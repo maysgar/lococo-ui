@@ -141,7 +141,6 @@ input[id="search"] {
 .search-input {
   height: 45px !important;
   margin-top: 10px !important;
-  border-radius: 2px;
 }
 
 nav .input-field label {
