@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US" style="height: 100%">
+
+<head>
+	<title>Lococo - Homepage</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/homepage.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<header>
+		<nav class="transparent absolute-top navbar black accent-2 nav-wrapper z-depth-0">
+			<div class="row">
+				<div class="col m2 left">
+					<a href="#" class="brand-logo">Lococo</a>
+					<a href="#" data-target="nav-mobile" class="sidenav-trigger button-collapse">
+						<i class="material-icons">menu</i>
+					</a>
+				</div>
+				<div class="col m6 hide-on-med-and-down">
+					<form class="search-input">
+						<div class="input-field">
+							<input id="search" type="search" />
+							<label for="search">
+								<i class="material-icons">search</i>
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="col m4">
+					<ul id="nav-desktop" class="right hide-on-med-and-down">
+						<li>
+							<a class="btn-large waves-effect waves-light transparent z-depth-0 modal-trigger" href="#login-modal">LOG IN</a>
+						</li>
+						<li>
+							<a class="btn-large waves-effect waves-light grey darken-1 z-depth-0 modal-trigger" href="#login-modal">SIGN UP</a>
+						</li>
+					</ul>
+				</div>
+				<ul id='dropdown1' class='dropdown-content'>
+					<li><a onclick="logout()">Sign out</a></li>
+					<li class="divider"></li>
+				</ul>
+			</div>
+		</nav>
+		<ul id="nav-mobile" class="sidenav">
+			<li>
+				<a>
+					<i class="material-icons">search</i>
+				</a>
+			</li>
+			<li>
+				<a>LOG IN</a>
+			</li>
+			<li>
+				<a>SIGN UP</a>
+			</li>
+		</ul>
+	</header>
+	<main>
+		<!-- Modal Structure -->
+		<div id="login-modal" class="modal">
+			<div class="modal-content">
+				<div class="row">
+					<div class="col s12 m6">
+						<h4>Login</h4>
+						<form onsubmit="submitLogin(); return false;">
+							<input id="login-email" type="email" name="email" placeholder="Email" required>
+							<input id="login-password" type="password" name="password" placeholder="Password" title="A combination of letters and numbers of 8 characters maximum" maxlength="8" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?!.*\s).*$" required>
+							<p>
+								<label>
+									<input type="checkbox" />
+									<span>Keep me signed in</span>
+								</label>
+							</p>
+							<button class="btn red full-width" type="submit" name="submit">LOG IN</button>
+						</form>
+					</div>
+					<div class="col s12 m6">
+						<div class="center">
+							<p>If you don't already have an account, click the button below to create your account
+							</p>
+							<button class="black white-text btn full-width">CREATE ACCOUNT</button>
+							<p>OR</p>
+							<button class="blue darken-2 white-text btn full-width">SIGN IN WITH FACEBOOK&nbsp;
+								<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							</button>
+							<button class="blue white-text btn full-width">SIGN IN WITH TWITTER&nbsp;
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="modal-footer grey lighten-3 valign-wrapper">
+				<p class="center">So you don't have an account?
+					<a class="modal-close" href="#">Continue as guest.</a>
+				</p>
+			</div>
+		</div>
+
+		<section id="featured-video" class="bg-responsive section">
+			<div class="container position-relative full-height">
+				<div class="row">
+					<div class="col s12 m12 absolute-bottom absolute-centered white-text">
+						<div class="featured-video-info">
+							<h3>IN A NUTSHELL: BLACK HOLES EXPLAINED</h3>
+							<p class="inline-b grey-text mr5">Featured video of the day</p>
+							<p class="inline-b grey-text mr5">Duration: 40m 52s</p>
+							<div class="stars inline-b">
+								<ul class="inline-b">
+									<li>
+										<i class="material-icons">star</i>
+									</li>
+									<li>
+										<i class="material-icons">star</i>
+									</li>
+									<li>
+										<i class="material-icons">star</i>
+									</li>
+									<li>
+										<i class="material-icons">star_half</i>
+									</li>
+									<li>
+										<i class="material-icons">star_outline</i>
+									</li>
+									<!-- <li>
+										<span class="rating">3.4</span>
+									</li> -->
+								</ul>
+							</div>
+							<p>
+								<a href="videopage.html" class="btn-large waves-effect waves-light grey darken-1">WATCH VIDEO</a>
+								<a class="btn-large waves-effect waves-light border-secondary transparent">VIEW INFO</a>
+								<a class="btn-flat white-text">
+								<i class="material-icons left">add</i>ADD TO QUEUE</a>
+							</p>
+						</div>
+						<!-- <div class="col s12 m3 rating-module border-secondary white-text absolute-bottom absolute-right">
+						<div class="inline-b">
+							<p class="centered">Rating
+								<span class="grey-text darken-1">based on 3,546 reviews</span>
+							</p>
+						</div>
+						<div class="stars">
+							<ul class="inline-b">
+								<li>
+									<i class="material-icons">star</i>
+								</li>
+								<li>
+									<i class="material-icons">star</i>
+								</li>
+								<li>
+									<i class="material-icons">star</i>
+								</li>
+								<li>
+									<i class="material-icons">star_half</i>
+								</li>
+								<li>
+									<i class="material-icons">star_outline</i>
+								</li>
+								<li>
+									<span class="rating">3.4</span>
+								</li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="slogan" class="container section valign-wrapper">
+			<h3 class="centered">Lococo, the same way as others, but just better</h3>
+		</section>
+		<section id="features" class="bg-responsive section">
+			<div class="container white-text position-relative full-height">
+				<h2>Express yourself freely</h2>
+				<h5>Our content filters are the lowest of the market</h5>
+				<h5 class="right-align absolute-right absolute-bottom">Store videos in the highest quality without loss or latency thanks to our advanced compression algorithm</h5>
+			</div>
+		</section>
+	</main>
+	<footer class="page-footer grey darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m4">
+					<h5>Get to Know Us</h5>
+					<ul>
+						<li>
+							<a href="#">Carrers</a>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">About Weissman Score</a>
+						</li>
+						<li>
+							<a href="#">PiedPipper compression</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col s12 m4">
+					<h5>Be On Lococo</h5>
+					<ul>
+						<li>
+							<a href="#">Make Money with Us</a>
+						</li>
+						<li>
+							<a href="#">Upload your videos</a>
+						</li>
+						<li>
+							<a href="#">Publicity</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col s12 m4">
+					<h5>Account Types</h5>
+					<ul>
+						<li>
+							<a href="#">Free account</a>
+						</li>
+						<li>
+							<a href="#">Premium account</a>
+						</li>
+						<li>
+							<a href="#">Gift Cards</a>
+						</li>
+						<li>
+							<a href="#">Payment Methods</a>
+						</li>
+						<li>
+							<a href="#">Help</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2017 Lococo
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+	<script src="script/homepage.js"></script>
+
+</body>
+
+</html>

@@ -12,3 +12,6 @@ install:
  - pip install html5validator
 
 script: html5validator --root src/ --show-warnings
+
+notifications:
+    slack: lavendiciondevs:dC5XLgiHxbdBHw03Zc5bpc2b
