@@ -144,20 +144,21 @@ footer a {
 }
 
 input[id="search"] {
-  height: 45px !important;
-  margin-top: 10px !important;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 2px !important;  
 }
 
 .search-input {
-  background-color: #535353 ;
-  height: 45px !important;
-  margin-top: 10px !important;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 2px;  
 }
 
 nav .input-field label {
   top: -20px !important;
-  left: 0 !important;
 }
+
 .full-width {
    width: 100%;
  }
@@ -178,7 +179,6 @@ nav .input-field label {
     margin-top: 5%;
   }
 }
-
 
 html body main div.container div.row.col.s12 ul.tabs.hide-on-small-only a.grey-text i.right.material-icons{
   line-height: 48px;
