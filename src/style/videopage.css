@@ -26,6 +26,16 @@ nav {
   width: 20%;
 }
 
+.desc-pop{
+  display: none;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  border: 2px solid rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
+  border-radius: 2px;
+  width: 100%;
+}
+
 .icons-order{
   float: right;
 }

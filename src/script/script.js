@@ -2,6 +2,9 @@ $(document).ready(function(){
     $('ul.tabs').tabs();
     $('.sidenav').sidenav();
     $('.modal').modal();
+    $(".desc-pop-button").click(function(){
+    $(".desc-pop").toggle();
+    });
   });
 
 

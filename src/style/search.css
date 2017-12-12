@@ -140,13 +140,13 @@ footer a {
 }
 
 input[id="search"] {
-  height: 45px !important; 
+  height: 45px !important;
   margin-top: 10px !important;
 }
 
 .search-input {
   background-color: #535353 ;
-  height: 45px !important; 
+  height: 45px !important;
   margin-top: 10px !important;
 }
 
@@ -164,6 +164,10 @@ nav .input-field label {
 
  .tab-right-icons{
    margin-top: 7%;
+ }
+
+ .desc-pop{
+   margin-top: 80%;
  }
 
 @media only screen and (max-width: 600px) {
