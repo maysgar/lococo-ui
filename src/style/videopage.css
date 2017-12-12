@@ -140,6 +140,10 @@ footer a {
   border: 1px solid grey !important;
 }
 
+.border-primary {
+  border: 1px solid black !important;
+}
+
 .centered {
   margin: 0 auto;
 }
@@ -162,10 +166,8 @@ footer a {
   padding: .25%;
 }
 
-/* TODO: meter los colores buenos aqui*/
-
 .tabs .tab a:hover, .tabs .tab a.active{
-  color: black !important;
+  color: #616161 !important;
 }
 
 .tabs .tab a {
@@ -173,7 +175,7 @@ footer a {
 }
 
 .tabs .indicator {
-  background-color: black !important;
+  background-color: #616161 !important;
 }
 
 input[id="search"] {
@@ -205,7 +207,7 @@ nav .input-field label {
   position: absolute;
   bottom: 10px;
   left: 20px;
-  right: 0;
+  right: 20px;
   z-index: 2;
   padding: 0;
   font-size: 16.85px;
