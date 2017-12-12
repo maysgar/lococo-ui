@@ -24,8 +24,12 @@ footer a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.tab a.active {
-  color: #616161!important;
+.tabs .tab a {
+  color: grey !important;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+  color: #616161 !important;
 }
 
 .tabs .indicator{
@@ -140,13 +144,13 @@ footer a {
 }
 
 input[id="search"] {
-  height: 45px !important; 
+  height: 45px !important;
   margin-top: 10px !important;
 }
 
 .search-input {
   background-color: #535353 ;
-  height: 45px !important; 
+  height: 45px !important;
   margin-top: 10px !important;
 }
 
