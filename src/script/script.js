@@ -142,14 +142,3 @@ function resetRatingStars() {
     $(elem).removeClass('blanco').removeClass('gray').addClass(current_star_statusses[i] ? 'blanco' : 'gray');
   });
 }
-
-  /*
-   * Sets a new cookie, with name, value and days given.
-   * W3Schools ©
-   */
-  function setCookie(cookieName, cookieValue, expDays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (expDays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cookieName + "=" + cookieValue + ";" + expires;
-  }
