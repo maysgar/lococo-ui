@@ -675,5 +675,12 @@ ESPECIAL DIRECTO cuando llegue a los 500K suscriptores.</p>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
 	<script src="script/script.js"></script>
+	<script type="text/javascript">
+	if(getCookie('email') != "" && getCookie('password') != "") {
+
+	} else {
+		$('.modal').modal('open');
+	}
+	</script>
 </body>
 </html>
