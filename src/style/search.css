@@ -175,8 +175,11 @@ nav .input-field label {
   .description{
     display: none;
   }
+  .mobile-margin{
+    margin-top: 5%;
+  }
 }
 
-main div.container div.row.col.s12 ul.tabs.hide-on-small-only a.grey-text i.right.material-icons{
+html body main div.container div.row.col.s12 ul.tabs.hide-on-small-only a.grey-text i.right.material-icons{
   line-height: 48px;
 }

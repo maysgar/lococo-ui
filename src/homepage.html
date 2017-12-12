@@ -3,7 +3,7 @@
 
 <head>
 	<title>Lococo - Homepage</title>
-	
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style/homepage.css">
@@ -57,10 +57,10 @@
 				</a>
 			</li>
 			<li>
-				<a>LOG IN</a>
+				<a onclick="$('.modal').modal('open');">LOG IN</a>
 			</li>
 			<li>
-				<a>SIGN UP</a>
+				<a onclick="$('.modal').modal('open');">SIGN UP</a>
 			</li>
 		</ul>
 	</header>
@@ -85,16 +85,24 @@
 					</div>
 					<div class="col s12 m6">
 						<div class="center">
-							<p>If you don't already have an account, click the button below to create your account
+							<p class="hide-on-med-and-down">If you don't already have an account, click the button below to create your account
 							</p>
 							<button class="black white-text btn full-width">CREATE ACCOUNT</button>
-							<p>OR</p>
-							<button class="blue darken-2 white-text btn full-width">SIGN IN WITH FACEBOOK&nbsp;
+							<p class="hide-on-med-and-down">OR</p>
+							<button class="hide-on-med-and-down blue darken-2 white-text btn full-width">SIGN IN WITH FACEBOOK&nbsp;
 								<i class="fa fa-facebook-official" aria-hidden="true"></i>
 							</button>
-							<button class="blue white-text btn full-width">SIGN IN WITH TWITTER&nbsp;
+							<button class="hide-on-med-and-down blue white-text btn full-width">SIGN IN WITH TWITTER&nbsp;
 								<i class="fa fa-twitter" aria-hidden="true"></i>
 							</button>
+							<div class="row show-on-small">
+								<button class="s6 blue darken-2 white-text btn">
+									<i class="fa fa-facebook-official" aria-hidden="true"></i>
+								</button>
+								<button class="s6 blue white-text btn">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -122,7 +130,7 @@
 								<i class="material-icons left">add</i>ADD TO QUEUE</button>
 						</p>
 					</div>
-					<div class="col s12 m3 rating-module border-secondary white-text absolute-bottom absolute-right">
+					<div class="col s12 m3 rating-module border-secondary white-text absolute-bottom absolute-right hide-on-med-and-down">
 						<div class="inline-b">
 							<p class="centered">Rating
 								<span class="grey-text darken-1">based on 3,546 reviews</span>
@@ -230,7 +238,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
-	<script src="script/homepage.js"></script>
+	<script src="script/script.js"></script>
 
 </body>
 
