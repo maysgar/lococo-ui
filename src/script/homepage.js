@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $('.sidenav').sidenav();
   $('.modal').modal();
+  checkCookies();
+  $('.dropdown-trigger').dropdown();
 });
 
 /*
@@ -59,8 +61,6 @@ function submitLogin() {
   var userEmail = document.getElementById('login-email').value;
   // Get password entered
   var userPassword = document.getElementById('login-password').value;
-  // Hide login modal
-  document.getElementById('login-modal').style.display =  "none";
   // Check if email entered is known
   if (getCookie("email") != userEmail) {
     // New user! Delete old cookies
@@ -74,27 +74,24 @@ function submitLogin() {
   loadCookiesData();
 }
 
-/*
- * Stores the new data entered by the user in the form in new cookies, and alert
- * the user about the fields modified.
- */
-function submitChanges() {
-  // Get the input and select elements of the form
-  var formFields = document.getElementsByClassName('sections-container')[0].querySelectorAll('input, select');
-  // This will be store the name of the fields modified
-  var changes = "";
-  // Go through all the form fields
-  for (var i = 0; i < formFields.length; i++) {
-    // Check if it has been modified
-    if (getCookie(formFields[i].name) != formFields[i].value) {
-      // If so, save the name of the field modified...
-      changes += "- " + formFields[i].name.capitalize() + "\n";
-      // ...and store the new value
-      setCookie(formFields[i].name, formFields[i].value, 30);
-    }
+function loadCookiesData() {
+  $('#nav-desktop > li').hide();
+  $('#nav-mobile > li').hide();
+
+  $('#nav-desktop').append("<li><a class='btn transparent z-depth-0 dropdown-trigger' data-target='dropdown1'>" + getCookie('email') + '</a></li>');
+  $('#nav-mobile').append("<li><div class='user-view'><span class='name'>" + "KELOOKKK" + "</span><span class='email'>" + getCookie('email') + "</span></div></li>");
+  $('#nav-mobile').append("<li><a onclick='logout()' class='btn black'>Sign out</a></li>");
+  $('.modal').modal('close');
+}
+
+function checkCookies() {
+  if(getCookie('email') != "" && getCookie('password') != "") {
+    loadCookiesData();
   }
-  // Show the modified fields to the user
-  alert("Fields modified:\n" + changes);
-  // Load the new data
-  loadCookiesData();
+}
+
+function logout() {
+  deleteAllCookies();
+  $('#nav-desktop > li').show();
+  $('.dropdown-trigger').hide();
 }
